@@ -8,17 +8,18 @@
     <title>Oss Teams by Shivank</title>
 </head>
 <body>
-    
+
     <div class="rootCont">
         <!-- navbar  -->
             <div class="navbar">
                 <div class="childNav">
                     <div class="teams">
-                        <h6>Team</h6>
+                        <h6 class="logo">Team</h6>
                     </div>
                     <div class="recording">
+                      <img id="icon" src="res/moon.png">
                         <img src="res/recording-icon.png" alt="">
-                        <h3><b>Recording &nbsp; 09:59:19 </b></h3>
+                        <h3 class="heading"><b>Recording &nbsp; 09:59:19 </b></h3>
                     </div>
                 </div>
             </div>
@@ -43,6 +44,7 @@
                             <ul>
                                 <li>Shivank  Singh </li>
                                 <li>Abhay Sahu</li>
+                                <li>Jaskaran Singh </li>
                                 <li>Samabhav</li>
                                 <li>AKHIL</li>
                                 <li>Devesh kumar Tiwari</li>
@@ -62,6 +64,7 @@
                                 <li>Abhay Sahu</li>
                                 <li>gudia rani</li>
                                 <li>Aditya </li>
+                                <li>Jaskaran Singh </li>
                                 <li>Sujeet Kumar</li>
                                 <li>Soumyadip Roy</li>
                                 <li>Devesh Kumar Tiwari</li>
@@ -93,7 +96,7 @@
                             <div class="person">
                                 <div class="childPerson">
                                         <div class="icon">
-                                            
+
                                             <div class="circle">
                                                 <p>WC</p>
                                             </div>
@@ -109,7 +112,7 @@
                             <div class="person">
                                 <div class="childPerson">
                                         <div class="icon">
-                                            
+
                                             <div class="circle">
                                                 <p>AC</p>
                                             </div>
@@ -125,7 +128,7 @@
                             <div class="person">
                                 <div class="childPerson">
                                         <div class="icon">
-                                            
+
                                             <div class="circle">
                                                 <p>AC</p>
                                             </div>
@@ -141,7 +144,7 @@
                             <div class="person">
                                 <div class="childPerson">
                                         <div class="icon">
-                                            
+
                                             <div class="circle">
                                                 <p>AC</p>
                                             </div>
@@ -157,7 +160,7 @@
                             <div class="person">
                                 <div class="childPerson">
                                         <div class="icon">
-                                            
+
                                             <div class="circle">
                                                 <p>AC</p>
                                             </div>
@@ -217,7 +220,19 @@
 
     </div>
 
+    <script>
 
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./res/sun.png";
+            }else {
+                icon.src = "./res/moon.png";
+            }
+        }
+    </script>
 
 </body>
 </html>
